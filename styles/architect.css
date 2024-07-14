@@ -12,6 +12,10 @@
 .display-flex{
     display: flex;
 }
+.text-primary{
+  color: rgb(255, 144, 14);
+  
+}
 .btn-primary{
   background-color: rgb(255, 144, 14);
   color: white;
@@ -98,9 +102,26 @@ main > section{
  }
   /*responsive media query*/
   @media screen and (max-width:576px) {
-     .navbar , .nav-links{
+     .navbar , 
+     .nav-links,
+     .team{
       flex-direction: column;
      }
+     .team-img-container{
+      grid-template-columns: repeat(1,1fr);
+     }
+     .our-features{
+      margin: 20px;
+     }
+  }
+  /*medium size device*/
+  @media  screen and(min-width:576px)and(max-width:992px) {
+    .team{
+      flex-direction: column;
+    }
+    .our-features{
+      margin: 50px auto;
+    }
   }
 
 
