@@ -36,6 +36,10 @@ main > section{
 #quick-list{
   color: rgb(66, 66, 66);
 }
+.section-title{
+  font-size: 2.8rem;
+  font-weight: 700;
+ }
 
   /*header styles*/
 
@@ -87,6 +91,7 @@ main > section{
  }
  .team-img-container{
   display: grid;
+  gap: 20px;
   grid-template-columns: repeat(2,1fr);
  }
  .our-features{
@@ -96,10 +101,7 @@ main > section{
  #quick-list{
   font-weight: 500;
  }
- .feature-title{
-  font-size: 2.8rem;
-  font-weight: 700;
- }
+ 
   /*responsive media query*/
   @media screen and (max-width:576px) {
      .navbar , 
